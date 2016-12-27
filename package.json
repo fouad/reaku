@@ -1,0 +1,12 @@
+{
+  "name": "reaku",
+  "version": "0.2.0",
+  "main": "index.js",
+  "repository": "https://github.com/fouad/reaku.git",
+  "author": "Fouad Matin <m@fouad.co>",
+  "license": "MIT",
+  "peerDependencies": {
+    "deku": "*",
+    "react": "*"
+  }
+}
