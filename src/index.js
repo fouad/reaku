@@ -15,6 +15,18 @@ module.exports = React.createClass({
     })
   },
 
+  componentWillReceiveProps (nextProps) {
+    const { component, props, opts: _opts } = nextProps
+    const opts = _opts || {}
+
+    opts.props = opts.props || props || {}
+
+    this._mountDeku({
+      component,
+      opts
+    })
+  },
+
   render () {
     return React.createElement('div', {
       ref: (node) => this.mountNode = node
